@@ -36,4 +36,4 @@ const server=http.createServer(async(req,res)=>{
  }catch{res.writeHead(503,{'Content-Type':'application/json'});res.end(JSON.stringify({error:'Live listing unavailable. Please use the Google Maps gallery and hours link.'}));}
 });
 server.listen(8080,'0.0.0.0');
-if(process.env.TUNNEL_TOKEN){const tunnel=spawn('/usr/local/bin/cloudflared',['tunnel','--no-autoupdate','run'],{stdio:['ignore','ignore','ignore'],env:process.env});process.on('SIGTERM',()=>{tunnel.kill();server.close(()=>process.exit());});}
+if(process.env.PUBLIC_QUICK_TUNNEL==='true'){const tunnel=spawn('/usr/local/bin/cloudflared',['tunnel','--no-autoupdate','--url','http://127.0.0.1:8080'],{stdio:['ignore','ignore','pipe']});tunnel.stderr.on('data',buf=>{const match=buf.toString().match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/);if(match)console.log('PUBLIC_GUIDE_URL='+match[0]);});process.on('SIGTERM',()=>{tunnel.kill();server.close(()=>process.exit());});}
