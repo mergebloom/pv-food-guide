@@ -1,8 +1,6 @@
-FROM cloudflare/cloudflared:latest AS tunnel
 FROM node:22-alpine
-COPY --from=tunnel /usr/local/bin/cloudflared /usr/local/bin/cloudflared
 WORKDIR /app
-COPY server.mjs ./
+COPY server.mjs catalog.json ./
 COPY site ./site
 USER node
 EXPOSE 8080

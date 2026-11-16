@@ -5,3 +5,5 @@
 !Dockerfile
 !.gitignore
 !README.md
+!catalog.json
+!build-expanded.py

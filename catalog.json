@@ -1,0 +1,393 @@
+{
+  "version": "pv-wide-16-v1",
+  "researchDate": "2026-11-16",
+  "sources": {
+    "Eater": {
+      "url": "https://www.eater.com/maps/best-restaurants-puerto-vallarta-mexico",
+      "title": "The 25 Best Restaurants in Puerto Vallarta",
+      "articleUpdated": "2024-03-07"
+    },
+    "MND": {
+      "url": "https://mexiconewsdaily.com/lifestyle/food/where-to-find-the-best-tacos-in-puerto-vallarta/",
+      "title": "Where to find the best tacos in Puerto Vallarta",
+      "published": "2024-06-30"
+    },
+    "MexicoDesconocido": {
+      "url": "https://www.mexicodesconocido.com.mx/puerto-vallarta-uno-de-los-mejores-lugares-para-comer-tacos-en-mexico.html",
+      "title": "Puerto Vallarta, uno de los mejores lugares para comer tacos en México"
+    },
+    "TMSeafood": {
+      "url": "https://takemetopuertovallarta.com/seafood-in-puerto-vallarta/",
+      "title": "21 Best Seafood Restaurants in Puerto Vallarta Mexico"
+    },
+    "TMVersalles": {
+      "url": "https://takemetopuertovallarta.com/best-restaurants-in-versalles-puerto-vallarta/",
+      "title": "29 Best Restaurants in Versalles Puerto Vallarta [2026]"
+    },
+    "VancouverSun": {
+      "url": "https://vancouversun.com/life/food/restaurant-review-tours-provide-a-locals-guide-to-delicious-dining-in-puerto-vallarta",
+      "title": "Tours provide a local’s guide to delicious dining in Puerto Vallarta"
+    }
+  },
+  "venues": [
+    {
+      "slug": "abulon-antojeria-del-mar",
+      "name": "Abulón Antojería del Mar",
+      "count": 4,
+      "sourceCodes": [
+        "MND",
+        "VancouverSun",
+        "TMSeafood",
+        "TMVersalles"
+      ],
+      "neighborhood": "Versalles",
+      "address": "Hamburgo 137, Versalles, 48310 Puerto Vallarta, Jal., Mexico",
+      "description": "Open-air seafood restaurant with treed patio seating and creative tuna, shrimp, and octopus dishes.",
+      "signatureOrder": "Shrimp al pastor tacos with pineapple and avocado cream; alternatively a tuna tostada.",
+      "practicalNote": "A sit-down seafood meal; shellfish and raw preparations are common. Ask about ingredients.",
+      "identityNotes": "Vancouver Sun explicitly gives Hamburgo 137; live Places matches. Other articles identify the same Versalles restaurant.",
+      "placeID": "ChIJlb6bQXtFIYQR2WwT_rTR1xo",
+      "researchStatus": "OPERATIONAL",
+      "food": "Seafood",
+      "meals": [
+        "Lunch",
+        "Evening"
+      ],
+      "subtitle": "A leafy seafood courtyard"
+    },
+    {
+      "slug": "tacon",
+      "name": "Tacón de Marlín",
+      "subtitle": "The coastal burrita",
+      "count": 3,
+      "food": "Seafood",
+      "meals": [
+        "Lunch"
+      ],
+      "description": "Smoky marlin, shrimp and octopus tucked into griddled flour-tortilla burritas. This is coastal comfort food, not a rice-and-bean burrito.",
+      "signatureOrder": "Start with a smoked-marlin burrita; try mixed seafood if you want variety.",
+      "address": "C. Honduras 145, interior E",
+      "practicalNote": "Honduras branch only — not the airport location. Expect fish, shellfish, wheat and often cheese; ask about ingredients.",
+      "identityNotes": "",
+      "neighborhood": "5 de Diciembre",
+      "placeID": "ChIJ39issVxFIYQRMD7NH2R6iaE",
+      "sourceCodes": [
+        "Eater",
+        "TMSeafood",
+        "TMVersalles"
+      ],
+      "researchStatus": "OPERATIONAL"
+    },
+    {
+      "slug": "el-puerco-de-oro",
+      "name": "El Puerco de Oro",
+      "count": 3,
+      "sourceCodes": [
+        "Eater",
+        "MND",
+        "TMVersalles"
+      ],
+      "neighborhood": "Versalles",
+      "address": "Mérida 128, Versalles, 48310 Puerto Vallarta, Jal., Mexico",
+      "description": "Focused neighborhood taquería known for pork belly on heirloom blue-corn tortillas, with pork in salsa verde and a bean-and-cheese option.",
+      "signatureOrder": "Pork belly tacos on blue-corn tortillas; try the salsa counter.",
+      "practicalNote": "Breakfast/lunch only on the live listing, 9 am–3 pm daily; use Mérida 128, not the older España address.",
+      "identityNotes": "Moved: Eater selects 325 D Calle España, but current Places resolves both name-only and old-address searches to Mérida 128. TMVersalles explicitly reports the move to Mérida 128; retain this as a relocated editorial venue, not an exact old-address branch match.",
+      "placeID": "ChIJP2wnOFBFIYQRGHd6kZdz3-Q",
+      "researchStatus": "OPERATIONAL",
+      "food": "Tacos",
+      "meals": [
+        "Breakfast",
+        "Lunch"
+      ],
+      "subtitle": "Pork belly, blue corn"
+    },
+    {
+      "slug": "marisma-fish-taco",
+      "name": "Marisma Fish Taco",
+      "count": 3,
+      "sourceCodes": [
+        "Eater",
+        "MND",
+        "TMSeafood"
+      ],
+      "neighborhood": "Emiliano Zapata / Zona Romántica",
+      "address": "Naranjo 320, Zona Romántica, Emiliano Zapata, 48380 Puerto Vallarta, Jal., Mexico",
+      "description": "Daytime taco stand known for fried-to-order fish strips in handmade corn tortillas and seafood guisados.",
+      "signatureOrder": "Taco de dedo de pescado: battered fish with cabbage, salsa and chipotle crema.",
+      "practicalNote": "Daytime stop; bring cash per TMSeafood. Use Naranjo 320, not the closed Versalles branch.",
+      "identityNotes": "Eater explicitly selects Naranjo 320 and Places matches. MND discusses both branches and focuses on Versalles; count is brand-level, not proof all articles reviewed Naranjo. TMVersalles now reports Versalles closed, independently corroborated by live Places at Hamburgo 156B.",
+      "placeID": "ChIJdSd1fVJFIYQRmEmzAv5-DkY",
+      "researchStatus": "OPERATIONAL",
+      "food": "Seafood",
+      "meals": [
+        "Lunch"
+      ],
+      "subtitle": "Fish fried to order"
+    },
+    {
+      "slug": "liz",
+      "name": "Birriería y Taquería Liz",
+      "subtitle": "A proper birria breakfast",
+      "count": 2,
+      "food": "Birria",
+      "meals": [
+        "Breakfast"
+      ],
+      "description": "Slow-cooked beef and goat birria, served in soft or crisp tacos with rich consommé. A neighborhood morning stop, rather than a late-night taquería.",
+      "signatureOrder": "Ask for tacos dorados (crisp) or suaves (soft), with consommé on the side. Confirm which meat is available.",
+      "address": "Panamá 199",
+      "practicalNote": "Dorados means crisp; suaves means soft. Quesabirria adds cheese. Ask before adding salsa — heat varies.",
+      "identityNotes": "",
+      "neighborhood": "5 de Diciembre",
+      "placeID": "ChIJY_sKqlxFIYQRXEw5bzjQnt0",
+      "sourceCodes": [
+        "Eater",
+        "MND"
+      ],
+      "researchStatus": "OPERATIONAL"
+    },
+    {
+      "slug": "tia",
+      "name": "La Tía Ñaña",
+      "subtitle": "A home-style seafood pause",
+      "count": 2,
+      "food": "Seafood",
+      "meals": [
+        "Lunch"
+      ],
+      "description": "A modest neighborhood seafood spot, also written La Tía Nana in travel guides. Marlin burritos and shrimp broth are highlighted by México Desconocido.",
+      "signatureOrder": "Try the marlin burrito and ask whether caldo de camarón (shrimp broth) is available.",
+      "address": "Honduras 215",
+      "practicalNote": "Look for Ñaña. Google currently names this Honduras 215 branch Mariscos La Tía Ñaña • DESDE 1975; older guide map pins differ slightly. Menu availability may vary; ask what is cooking.",
+      "identityNotes": "",
+      "neighborhood": "5 de Diciembre",
+      "placeID": "ChIJr7TQpFxFIYQRxkIpWdX_GG4",
+      "sourceCodes": [
+        "MexicoDesconocido",
+        "TMSeafood"
+      ],
+      "researchStatus": "OPERATIONAL"
+    },
+    {
+      "slug": "el-chulo",
+      "name": "Tacos de Cabeza el Chulo",
+      "count": 2,
+      "sourceCodes": [
+        "Eater",
+        "MexicoDesconocido"
+      ],
+      "neighborhood": "Emiliano Zapata / Zona Romántica",
+      "address": "Aguacate 263-209, Zona Romántica, Emiliano Zapata, 48380 Puerto Vallarta, Jal., Mexico",
+      "description": "Street-side specialist in steamed beef-head tacos, with tender meat and steamed tortillas.",
+      "signatureOrder": "Cachete, lengua or surtido tacos al vapor.",
+      "practicalNote": "Cachete is cheek, lengua is tongue, surtido is a mix. Closing after midnight belongs to the following calendar day.",
+      "identityNotes": "Both editorials and live Places say Aguacate 263-209. Preserve the full unusual number; do not truncate it to Aguacate 263.",
+      "placeID": "ChIJrZ1eDsRFIYQRmkRVIImGfAw",
+      "researchStatus": "OPERATIONAL",
+      "food": "Tacos",
+      "meals": [
+        "Evening"
+      ],
+      "subtitle": "Tender tacos al vapor"
+    },
+    {
+      "slug": "lamara",
+      "name": "Lamara",
+      "count": 2,
+      "sourceCodes": [
+        "VancouverSun",
+        "TMSeafood"
+      ],
+      "neighborhood": "Versalles",
+      "address": "Hamburgo 108, Versalles, 48310 Puerto Vallarta, Jal., Mexico",
+      "description": "Casual seafood spot offering multiple ceviches and aguachiles, including fruit-and-chile combinations.",
+      "signatureOrder": "Aguachile or ceviche tostadas; Vancouver Sun also describes tuna, avocado and pineapple tacos.",
+      "practicalNote": "Ask how spicy the aguachile is before choosing. Raw seafood preparations are common.",
+      "identityNotes": "Vancouver Sun gives Hamburgo 108; Places matches and TMSeafood map coordinates point to the same location.",
+      "placeID": "ChIJ18X0PXtFIYQRqlTBbqxq3b8",
+      "researchStatus": "OPERATIONAL",
+      "food": "Seafood",
+      "meals": [
+        "Lunch"
+      ],
+      "subtitle": "Ceviche with a creative streak"
+    },
+    {
+      "slug": "miscelanea-vallarta",
+      "name": "Miscelánea Vallarta",
+      "count": 2,
+      "sourceCodes": [
+        "Eater",
+        "TMVersalles"
+      ],
+      "neighborhood": "Versalles",
+      "address": "C. Milán #255, Versalles, 48310 Mexico, Jal., Mexico",
+      "description": "Breakfast and brunch café using sourdough, with Mexican breakfast sandwiches, oat pancakes and coffee drinks.",
+      "signatureOrder": "Sourdough molletes or a chilaquiles torta, with coco brew.",
+      "practicalNote": "A breakfast-and-brunch café rather than a late-night taco stop. Ask about ingredients and availability.",
+      "identityNotes": "Exact Eater branch at Calle Milán #255 matches Places street, postcode and coordinates. Google unusually labels locality as Mexico rather than Puerto Vallarta; raw formattedAddress is preserved rather than silently corrected.",
+      "placeID": "ChIJg8WWbyFFIYQR_R63aiVynyQ",
+      "researchStatus": "OPERATIONAL",
+      "food": "Café",
+      "meals": [
+        "Breakfast",
+        "Lunch"
+      ],
+      "subtitle": "Sourdough and a slow morning"
+    },
+    {
+      "slug": "ocho-tostadas",
+      "name": "Ocho Tostadas",
+      "count": 2,
+      "sourceCodes": [
+        "Eater",
+        "TMSeafood"
+      ],
+      "neighborhood": "Lázaro Cárdenas / Estadio",
+      "address": "Río Guayaquil 413, Lázaro Cárdenas, 48330 Puerto Vallarta, Jal., Mexico",
+      "description": "Long-running seafood institution known for ceviche tostadas, fish chicharrón and crab-filled tacos.",
+      "signatureOrder": "Ceviche molido tostada with shrimp or scallops; add chicharrón de pescado or taquitos de jaiba.",
+      "practicalNote": "Bring cash per Eater; live Estadio listing is noon–7 pm, closed Wednesday.",
+      "identityNotes": "Eater explicitly selects Río Guayaquil 413, described as the original; live listing is named Mariscos 8 Tostadas Estadio at that exact address. TMSeafood calls it 5 de Diciembre but its embedded map points to Marina coordinates (20.6660194,-105.2486763), so its branch evidence conflicts. Count remains brand-level; do not replace the Eater branch with the linked Marina branch.",
+      "placeID": "ChIJQ3l6kl1FIYQRJ9fqOCcqnzM",
+      "researchStatus": "OPERATIONAL",
+      "food": "Seafood",
+      "meals": [
+        "Lunch"
+      ],
+      "subtitle": "The original Estadio seafood stop"
+    },
+    {
+      "slug": "tacos-la-mucca",
+      "name": "Tacos La Mucca",
+      "count": 2,
+      "sourceCodes": [
+        "Eater",
+        "MND"
+      ],
+      "neighborhood": "Emiliano Zapata / Zona Romántica",
+      "address": "Camichin 172, Zona Romántica, Emiliano Zapata, 48380 Puerto Vallarta, Jal., Mexico",
+      "description": "Historical editorial pick: chef-led taquería serving a substantial local-style arriero taco with wood-fired Angus beef.",
+      "signatureOrder": "Historical signature: taco arriero with carne asada, melted cheese, beans and minced cabbage.",
+      "practicalNote": "Do not send visitors here as an active recommendation: Google lists this exact branch permanently closed.",
+      "identityNotes": "Eater selects Camichín 172; Places returns La Mucca Taquería at Camichin 172, CLOSED_PERMANENTLY. Broader name search returns the same closed place only; no replacement location was verified, and no movedPlaceId was returned.",
+      "placeID": "ChIJfw44rvxFIYQR5jKKaiWM0Ss",
+      "researchStatus": "CLOSED_PERMANENTLY",
+      "food": "Tacos",
+      "meals": [
+        "Evening"
+      ],
+      "subtitle": "Historical arriero specialist"
+    },
+    {
+      "slug": "tacos-memo-grill",
+      "name": "Tacos Memo Grill",
+      "count": 2,
+      "sourceCodes": [
+        "MexicoDesconocido",
+        "MND"
+      ],
+      "neighborhood": "Emiliano Zapata / Zona Romántica",
+      "address": "Basilio Badillo Lb, Zona Romántica, Emiliano Zapata, 48380 Puerto Vallarta, Jal., Mexico",
+      "description": "Historical street-side grill specializing in asada tacos, tortas, burritos and local-style volcanes.",
+      "signatureOrder": "Historical signature: volcán with grilled meat, cheese, beans and salsa on a tostada.",
+      "practicalNote": "Do not treat as an operating late-night option: Google lists Taco Memo’s Grill permanently closed.",
+      "identityNotes": "Both editorials specify Aguacate at Basilio Badillo. Places returns Taco Memo’s Grill near that corner with the malformed number Basilio Badillo Lb, preserved verbatim, CLOSED_PERMANENTLY. Name-only follow-up returns the same closed listing; no movedPlaceId or replacement verified.",
+      "placeID": "ChIJX47aDE1FIYQRF5UWtK_gZh0",
+      "researchStatus": "CLOSED_PERMANENTLY",
+      "food": "Tacos",
+      "meals": [
+        "Evening"
+      ],
+      "subtitle": "Historical volcanes from the grill"
+    },
+    {
+      "slug": "tacos-sahuayo",
+      "name": "Tacos Sahuayo",
+      "count": 2,
+      "sourceCodes": [
+        "Eater",
+        "MND"
+      ],
+      "neighborhood": "La Vena",
+      "address": "Paseo Benemérito de las Americas 290, La Vena, 48320 Puerto Vallarta, Jal., Mexico",
+      "description": "Neighborhood taco stand known for well-seasoned, flame-charred al pastor with warm spice notes.",
+      "signatureOrder": "Al pastor tacos from the trompo; tortas or volcanes are alternatives.",
+      "practicalNote": "An evening taco stop. The listed early-morning closing belongs to the following calendar day.",
+      "identityNotes": "Eater address and live Places match Paseo Benemérito de las Americas 290, La Vena. MND loosely locates it on the Versalles/Santa Maria border; retain La Vena as the exact listing neighborhood.",
+      "placeID": "ChIJ7zCmDmRFIYQRMkDiXQd3FaU",
+      "researchStatus": "OPERATIONAL",
+      "food": "Tacos",
+      "meals": [
+        "Evening"
+      ],
+      "subtitle": "A late-night al pastor institution"
+    },
+    {
+      "slug": "tuna-azul",
+      "name": "Tuna Azul",
+      "count": 2,
+      "sourceCodes": [
+        "TMSeafood",
+        "TMVersalles"
+      ],
+      "neighborhood": "Versalles",
+      "address": "Lisboa 171, Versalles, 48310 Puerto Vallarta, Jal., Mexico",
+      "description": "Contemporary casual seafood restaurant emphasizing tuna tostadas and sashimi, with cooked seafood tacos and ceviche.",
+      "signatureOrder": "Tuna tostada or shrimp ceviche, followed by a fried fish taco.",
+      "practicalNote": "Select Tuna Azul Versalles at Lisboa 171, not another branch; live hours are 2–9 pm daily.",
+      "identityNotes": "TMVersalles explicitly names Lisboa 171 and Places matches Tuna Azul Versalles. TMSeafood places its recommendation in Versalles; its menu description is brand-level.",
+      "placeID": "ChIJh6iXcsJFIYQR5v25HXlcZQQ",
+      "researchStatus": "OPERATIONAL",
+      "food": "Seafood",
+      "meals": [
+        "Lunch",
+        "Evening"
+      ],
+      "subtitle": "A tuna-forward Versalles stop"
+    },
+    {
+      "slug": "carboncito",
+      "name": "El Carboncito",
+      "subtitle": "When the pastor spit turns",
+      "count": 1,
+      "food": "Tacos",
+      "meals": [
+        "Evening"
+      ],
+      "description": "A late-night neighborhood institution for tacos al pastor: marinated pork carved from a rotating spit, with the usual salsa-and-lime ritual.",
+      "signatureOrder": "Order tacos al pastor and a side of grilled spring onions (cebollitas).",
+      "address": "Honduras 127",
+      "practicalNote": "Casual indoor and sidewalk seating. Listed 01:00 closing is after midnight, on the following calendar day.",
+      "identityNotes": "",
+      "neighborhood": "5 de Diciembre",
+      "placeID": "ChIJsXrTSENFIYQRlTgFtW3k_Ak",
+      "sourceCodes": [
+        "MND"
+      ],
+      "researchStatus": "OPERATIONAL"
+    },
+    {
+      "slug": "julio",
+      "name": "Julio’s Churros",
+      "subtitle": "The cinnamon-sugar finale",
+      "count": 1,
+      "food": "Sweet",
+      "meals": [
+        "Evening"
+      ],
+      "description": "A street stand known for churros fried to order, then rolled in cinnamon sugar. Eater profiles Julio and his wife Paty and their long-running neighborhood tradition.",
+      "signatureOrder": "A fresh batch of plain cinnamon-sugar churros. Ask for the current portion and price.",
+      "address": "Uruguay 206–248, at Perú · behind Casa Ley",
+      "practicalNote": "This is a street vendor, not a full-service restaurant. Setup and sell-out times can vary; a published schedule is not a guarantee.",
+      "identityNotes": "",
+      "neighborhood": "5 de Diciembre",
+      "placeID": "ChIJ0zV8TltFIYQRRZO2xXFl2fI",
+      "sourceCodes": [
+        "Eater"
+      ],
+      "researchStatus": "OPERATIONAL"
+    }
+  ]
+}

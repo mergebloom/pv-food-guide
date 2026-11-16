@@ -1,8 +1,9 @@
 import http from 'node:http';
 import {readFile} from 'node:fs/promises';
-import {createHmac,randomBytes,timingSafeEqual} from 'node:crypto';
-import {spawn} from 'node:child_process';
-const places={tacon:'ChIJ39issVxFIYQRMD7NH2R6iaE',liz:'ChIJY_sKqlxFIYQRXEw5bzjQnt0',tia:'ChIJr7TQpFxFIYQRxkIpWdX_GG4',carboncito:'ChIJsXrTSENFIYQRlTgFtW3k_Ak',julio:'ChIJ0zV8TltFIYQRRZO2xXFl2fI'};
+import {createHmac,randomBytes} from 'node:crypto';
+const catalog=JSON.parse(await readFile(new URL('./catalog.json',import.meta.url)));
+const places=Object.fromEntries(catalog.venues.map(v=>[v.slug,v.placeID]));
+if(catalog.venues.length!==16||Object.keys(places).length!==16)throw Error('Invalid venue inventory');
 const secret=randomBytes(32),key=process.env.GOOGLE_PLACES_API_KEY;
 const sign=s=>createHmac('sha256',secret).update(s).digest('base64url');
 let day='',used=0; const limits=new Map();
@@ -19,9 +20,9 @@ const server=http.createServer(async(req,res)=>{
   if(u.pathname.startsWith('/api/place/')){
    const slug=u.pathname.split('/').pop();if(!places[slug]){res.writeHead(404);return res.end();}
    const today=new Date().toISOString().slice(0,10);if(day!==today){day=today;used=0;}if(++used>1500)throw Error('daily budget');
-   const p=await(await google('places/'+places[slug]+'?languageCode=en','formattedAddress,regularOpeningHours,googleMapsUri,photos,attributions')).json();
+   const p=await(await google('places/'+places[slug]+'?languageCode=en','formattedAddress,regularOpeningHours,googleMapsUri,photos,attributions,businessStatus,movedPlaceId')).json();
    const photos=(p.photos||[]).slice(0,2).map(p=>{const payload=Buffer.from(JSON.stringify({name:p.name,exp:Date.now()+600000})).toString('base64url');return {src:'/api/photo?token='+payload+'.'+sign(payload),authors:p.authorAttributions||[],source:p.googleMapsUri||null};});
-   res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({address:p.formattedAddress,hours:p.regularOpeningHours?.weekdayDescriptions||[],maps:p.googleMapsUri,photos,attributions:p.attributions||[],checked:new Date().toISOString()}));
+   res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({address:p.formattedAddress,hours:p.regularOpeningHours?.weekdayDescriptions||[],maps:p.googleMapsUri,businessStatus:p.businessStatus||'UNKNOWN',movedPlaceId:p.movedPlaceId||null,photos,attributions:p.attributions||[],checked:new Date().toISOString()}));
   }
   if(u.pathname==='/api/photo'){
    const [p,s]=String(u.searchParams.get('token')).split('.');if(!p||s!==sign(p))throw Error('token');const t=JSON.parse(Buffer.from(p,'base64url'));if(t.exp<Date.now()||!Object.values(places).some(id=>t.name.startsWith('places/'+id+'/photos/')))throw Error('expired');
@@ -36,4 +37,4 @@ const server=http.createServer(async(req,res)=>{
  }catch{res.writeHead(503,{'Content-Type':'application/json'});res.end(JSON.stringify({error:'Live listing unavailable. Please use the Google Maps gallery and hours link.'}));}
 });
 server.listen(8080,'0.0.0.0');
-if(process.env.PUBLIC_QUICK_TUNNEL==='true'){const tunnel=spawn('/usr/local/bin/cloudflared',['tunnel','--no-autoupdate','--protocol','http2','--edge-ip-version','4','--url','http://127.0.0.1:8080'],{stdio:['ignore','ignore','pipe']});tunnel.stderr.on('data',buf=>{const match=buf.toString().match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/);if(match)console.log('PUBLIC_GUIDE_URL='+match[0]);});process.on('SIGTERM',()=>{tunnel.kill();server.close(()=>process.exit());});}
+
